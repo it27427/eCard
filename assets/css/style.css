@@ -17,6 +17,10 @@ ol {
   list-style: none;
 }
 
+figure {
+  margin: 0;
+}
+
 .topbar {
   height: 2.5rem;
 }
@@ -29,4 +33,18 @@ ol {
 .topbarlink:focus,
 .topbarlink:active {
   color: var(--linkhover);
+}
+
+.logo {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
 }
