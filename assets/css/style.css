@@ -1,3 +1,32 @@
+:root {
+  --linkcolor: #444;
+  --linkhover: #4ab2f1;
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+  transition: all 500ms ease-in;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .topbar {
   height: 2.5rem;
+}
+
+.topbarlink {
+  color: var(--linkcolor);
+}
+
+.topbarlink:hover,
+.topbarlink:focus,
+.topbarlink:active {
+  color: var(--linkhover);
 }
