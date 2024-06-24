@@ -1,0 +1,157 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.menulist {
+  @include list-vertical;
+  gap: size(5);
+
+  @include breakpoint(tab992) {
+    flex-direction: row;
+    gap: size(0);
+  }
+
+  &-link {
+    color: $textdefault;
+    @include border-single(bottom, solid, 1.5, $textmuted);
+    font-size: size(14);
+    font-weight: 500;
+    line-height: 1.7;
+    @include flex-center-vert;
+    padding: size(0) size(0) size(5);
+    @include transitionscolor;
+
+    @include breakpoint(tab992) {
+      border-bottom: 0;
+      font-size: size(15);
+      padding: size(0) size(16);
+    }
+
+    @include hover {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
+.herolist {
+  @include list-vertical;
+  gap: size(16);
+
+  &-item {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(18);
+      }
+    }
+  }
+}
+
+.listnotify {
+  @include list-vertical;
+  gap: size(12);
+
+  &-item {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+  }
+}
+
+.ratelist {
+  @include list-horizontal;
+  gap: size(4);
+
+  &-item {
+    @include square(20);
+    @include flex-center;
+    overflow: hidden;
+  }
+}
+
+.contactlist {
+  @include list-vertical;
+  gap: size(12);
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: size(4);
+  }
+
+  &-link {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .icon {
+      background: $primarylight;
+      @include square(50);
+      @include circle;
+      @include flex-center;
+      overflow: hidden;
+      padding: size(14);
+    }
+
+    .info {
+      @include flex-column;
+
+      .title {
+        color: $textdefault;
+        font-family: $secondaryfont;
+        font-size: size(18);
+        font-weight: 500;
+        line-height: 1.4;
+        @include transitionscolor;
+      }
+
+      .text {
+        color: $textmuted;
+        font-size: size(14);
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+
+    @include hover {
+      .info {
+        .title {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.footerlist {
+  @include list-vertical;
+  gap: size(16);
+
+  &-link {
+    color: $textmuted;
+    font-size: size(16);
+    font-weight: 500;
+    @include flex-center-vert;
+    @include w100;
+    @include transitionsall;
+
+    @include hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}

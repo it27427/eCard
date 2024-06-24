@@ -1,0 +1,529 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+section {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: size(96) size(0) size(64);
+
+  @include breakpoint(tab992) {
+    padding: size(64) size(0) size(124);
+  }
+
+  .descriptions {
+    @include flex-column;
+    gap: size(52);
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(24);
+
+    .display-1 {
+      line-height: 1.1;
+      letter-spacing: size(-1);
+
+      @include breakpoint(tab992) {
+        letter-spacing: size(-3);
+      }
+
+      .marked {
+        letter-spacing: inherit;
+      }
+    }
+
+    .details {
+      max-width: size(600);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.7;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(20);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(24);
+      }
+    }
+  }
+
+  &-thumbnail {
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+}
+
+.whypayfly {
+  background: $secbg;
+  padding: size(64) size(0) size(124);
+
+  @include breakpoint(tab992) {
+    padding: size(160) size(0) size(96);
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(44);
+
+    .display-3 {
+      letter-spacing: size(-1.92);
+      line-height: normal;
+
+      .marked {
+        letter-spacing: inherit;
+      }
+    }
+
+    .details {
+      max-width: size(560);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.7;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(18);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(20);
+      }
+    }
+  }
+
+  &-thumbnail {
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+}
+
+.instantmoney {
+  &-content {
+    background: $primarylight;
+    @include radius(20);
+    padding: size(64) size(32) size(80);
+
+    @include breakpoint(tab992) {
+      padding: size(96) size(32) size(80);
+    }
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(32);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.7;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(18);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(20);
+      }
+    }
+  }
+
+  .moneylist {
+    @include list-vertical;
+    gap: size(8);
+
+    &-item {
+      @include flex-center-vert;
+      gap: size(16);
+
+      .icon {
+        @include square(16);
+        @include flex-center;
+        overflow: hidden;
+        overflow: hidden;
+      }
+
+      .text {
+        color: $textdefault;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.7;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(18);
+        }
+      }
+    }
+  }
+}
+
+.howitworks {
+  padding: size(80) size(0) size(48);
+
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(48);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(64);
+
+    .detail {
+      max-width: size(560);
+      margin-inline: auto;
+
+      .text {
+        color: $textdefault;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.7;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(18);
+        }
+
+        @include breakpoint(desktop1920) {
+          font-size: size(20);
+        }
+      }
+    }
+  }
+}
+
+.features {
+  padding: size(80) size(0) size(48);
+
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(48);
+  }
+
+  &-left {
+    @include flex-column;
+    gap: size(48);
+
+    .topcontent {
+      @include flex-column;
+      gap: size(24);
+    }
+
+    .subtitle {
+      color: $textdefault;
+      font-family: $secondaryfont;
+      font-size: size(20);
+      font-weight: 500;
+    }
+
+    .display-3 {
+      color: $textdefault;
+    }
+
+    .details {
+      max-width: size(538);
+
+      .text {
+        color: $textdefault;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+
+        @include breakpoint(desktop1920) {
+          font-size: size(17);
+        }
+      }
+    }
+  }
+
+  &-right {
+    @include flex-column;
+    gap: size(16);
+  }
+}
+
+.seemless {
+  padding: size(80) size(0) size(48);
+  min-height: auto;
+
+  // @include breakpoint(tab992) {
+  //   padding: size(120) size(0) size(48);
+  // }
+
+  &-content {
+    @include flex-column;
+    gap: size(96);
+
+    @include breakpoint(desktop1400) {
+      gap: size(128);
+    }
+
+    @include breakpoint(desktop1920) {
+      gap: size(160);
+    }
+  }
+
+  .subtitle {
+    color: $textdefault;
+    font-family: $secondaryfont;
+    font-size: size(20);
+    font-weight: 500;
+  }
+
+  .display-3 {
+    color: $textdefault;
+  }
+
+  .details {
+    max-width: size(538);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(17);
+      }
+    }
+  }
+
+  .clients {
+    @include flex-center;
+    gap: size(16);
+    flex-wrap: wrap;
+
+    .client {
+      background: $bgmuted;
+      @include radius(10);
+      @include flex-center;
+      overflow: hidden;
+      padding: size(16);
+    }
+  }
+}
+
+.bridgescontinents {
+  padding: size(80) size(0) size(48);
+
+  // @include breakpoint(tab992) {
+  //   padding: size(120) size(0) size(48);
+  // }
+
+  &-content {
+    @include flex-column;
+    gap: size(64);
+  }
+
+  .details {
+    max-width: size(764);
+    margin-inline: auto;
+    text-align: center;
+
+    @include breakpoint(desktop1920) {
+      max-width: size(864);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(17);
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: size(80) size(0) size(80);
+
+  @include breakpoint(tab992) {
+    padding: size(120) size(0);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(64);
+  }
+
+  .subtitle {
+    color: $textdefault;
+    font-family: $secondaryfont;
+    font-size: size(20);
+    font-weight: 500;
+  }
+
+  .text {
+    color: $textdefault;
+    font-size: size(16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8;
+
+    @include breakpoint(desktop1920) {
+      font-size: size(17);
+    }
+  }
+}
+
+.allsolutions {
+  &-content {
+    background: $primary;
+    @include radius(20);
+    overflow: hidden;
+  }
+
+  .descriptions {
+    @include flex-column;
+    gap: size(32);
+  }
+
+  .display-3 {
+    letter-spacing: size(-1.92);
+  }
+
+  .details {
+    max-width: size(538);
+
+    .text {
+      color: $white;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(18);
+      }
+    }
+  }
+
+  .herolist {
+    &-item {
+      .text {
+        color: $white;
+        font-size: size(14);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(16);
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  padding: size(80) size(0) size(0);
+
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(0);
+  }
+
+  &-details {
+    @include border-single(bottom, solid, 1, $borderdefault);
+    padding: size(0) size(0) size(80);
+
+    @include breakpoint(tab992) {
+      padding: size(0) size(0) size(120);
+    }
+  }
+
+  .accordion {
+    @include flex-column;
+    gap: size(32);
+
+    &-item {
+      border: none;
+      @include border-single(bottom, solid, 1, $borderdefault);
+      @include radius(0);
+      padding-bottom: size(32);
+
+      &:first-of-type,
+      &:last-of-type {
+        @include radius(0);
+
+        .accordion-button {
+          @include radius(0);
+        }
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+
+    &-button {
+      color: $textdefault;
+      font-family: $secondaryfont;
+      font-size: size(18);
+      font-weight: 500;
+      letter-spacing: size(-0.6);
+
+      @include breakpoint(desktop1400) {
+        font-size: size(20);
+      }
+
+      &:not(.collapsed) {
+        @include setBgColor(transparent, $textdefault);
+        box-shadow: none;
+
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z' fill='%235BB5A2'/%3E%3C/svg%3E%0A");
+        }
+      }
+
+      &::after {
+        @include square(24);
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z' fill='%235BB5A2'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+      }
+    }
+
+    &-body {
+      padding: size(0);
+      padding-top: size(16);
+
+      .text {
+        color: $textmuted;
+        font-size: size(14);
+        font-weight: 500;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(16);
+        }
+      }
+    }
+  }
+}

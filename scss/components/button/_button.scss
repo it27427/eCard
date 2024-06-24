@@ -1,0 +1,91 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  @include transparent-button;
+  cursor: pointer;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  @include transitionsall;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.btn-hamburger {
+  background: $white;
+  @include square(40);
+  @include border(solid, 2, $primary);
+  @include radius(4);
+  @include flex-center;
+  overflow: hidden;
+  padding: size(8);
+
+  svg {
+    path {
+      fill: $primary;
+    }
+  }
+
+  @include hover {
+    background: $primary;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.btn-register {
+  @include setBgColor($primary, $white);
+  @include border(solid, 2, $primary);
+  @include radius(6);
+  font-family: $secondaryfont;
+  font-size: size(15);
+  font-weight: 500;
+  line-height: 1;
+  padding: size(10) size(16);
+  text-align: center;
+  @include transitionsall;
+
+  @include breakpoint(desktop1200) {
+    padding: size(12) size(20);
+  }
+
+  @include hover {
+    @include setBgColor($white, $primary);
+  }
+}
+
+.btn-learnmore {
+  @include flex-center-vert;
+  gap: size(8);
+
+  .text {
+    color: $primary;
+    font-family: $secondaryfont;
+    font-size: size(15);
+    font-weight: 500;
+  }
+
+  .icon {
+    @include square(24);
+    @include flex-center;
+    overflow: hidden;
+    @include transitionsall;
+  }
+
+  @include hover {
+    .icon {
+      margin-left: size(5);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.brandlogo {
+  width: size(66);
+  height: size(24);
+  @include flex-center;
+  overflow: hidden;
+
+  img {
+    @include wh100;
+    object-fit: contain;
+  }
+}
+
+.marked {
+  color: $primary;
+  font-weight: 700;
+}
+
+.parallax {
+  position: relative;
+  @include translateY(size(48));
+  opacity: 1;
+  transition: 1s all ease;
+
+  &.active {
+    @include translateY(0);
+    opacity: 1;
+  }
+}
