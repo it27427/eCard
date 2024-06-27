@@ -8,6 +8,8 @@
   --white: #ffffff;
   --black: #000000;
   --hoverbg: #f6f6f6;
+  --inputborder: #dddddd;
+  --placeholder: #9290c3;
   --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
 }
 
@@ -29,6 +31,14 @@ ol {
 
 figure {
   margin: 0;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .loadericon {
@@ -255,6 +265,48 @@ select:focus {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--secondary);
+}
+
+.searchform {
+  display: flex;
+  width: 100%;
+  border: solid 0.0625rem var(--inputborder);
+  transition: all 350ms ease;
+}
+
+.searchform:focus-within {
+  border-color: var(--secondary);
+}
+
+.searchfield {
+  border: none;
+  color: var(--linkcolor);
+  font-size: 0.875rem;
+  width: calc(100% - 5rem);
+  height: 2.5rem;
+  padding-inline: 0.875rem;
+}
+
+.searchfield::placeholder {
+  color: var(--placeholder);
+}
+
+.searchfield:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-search {
+  background: var(--secondary);
+  color: var(--white);
+  border: 0;
+  height: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  width: 5rem;
 }
 
 @media screen and (min-width: 48rem) {
