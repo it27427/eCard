@@ -731,13 +731,6 @@ select:focus {
   font-weight: 700;
 }
 
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 .btn-view {
   display: inline-block;
   padding-inline: 1.25rem;
@@ -851,6 +844,13 @@ select:focus {
 .newstext {
   color: var(--linkcolor);
   font-size: 0.875rem;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 48rem) {
