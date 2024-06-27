@@ -510,6 +510,10 @@ select:focus {
   transition: all 350ms ease-in;
 }
 
+.footer nav a:hover {
+  color: var(--primary) !important;
+}
+
 .social-link {
   width: 2.25rem;
   height: 2.25rem;
