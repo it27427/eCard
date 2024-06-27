@@ -121,7 +121,7 @@ figure {
   right: 0;
   background: var(--white);
   box-shadow: var(--shadow);
-  width: 17.5rem;
+  width: 15rem;
   display: none;
   animation-name: slideUpIn;
   animation-fill-mode: both;
@@ -131,7 +131,7 @@ figure {
 .dropdownlist-link {
   display: inline-block;
   padding: 0.625rem 1.25rem 0.625rem 1.875rem;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   width: 100%;
   color: var(--linkcolor);
   transition: all 350ms ease;
