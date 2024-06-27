@@ -702,7 +702,13 @@
                         </div>
                       </div>
 
-                      <button type="button" class="btn-remove">
+                      <button
+                        type="button"
+                        class="btn-remove"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Remove from cart"
+                      >
                         <i class="ri-delete-bin-2-fill"></i>
                       </button>
                     </div>
@@ -740,7 +746,13 @@
                         </div>
                       </div>
 
-                      <button type="button" class="btn-remove">
+                      <button
+                        type="button"
+                        class="btn-remove"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Remove from cart"
+                      >
                         <i class="ri-delete-bin-2-fill"></i>
                       </button>
                     </div>
@@ -791,6 +803,65 @@
                   />
                 </figure>
                 <h5 class="emptytitle">Your Wishlist Is Empty!</h5>
+              </div>
+
+              <!-- WISHLIST -->
+              <div class="d-flex flex-column gap-4">
+                <div class="cartcard">
+                  <figure class="cartcard-thumb">
+                    <img
+                      src="assets/images/slider/itunes.png"
+                      alt="cart-thumbnail"
+                    />
+                  </figure>
+
+                  <div class="cartcard-details">
+                    <div class="info">
+                      <a href="#" class="title">iTunes Gift Card</a>
+                      <p class="price">$20</p>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn-remove"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Remove from wishlist"
+                    >
+                      <i class="ri-delete-bin-2-fill"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cartcard">
+                  <figure class="cartcard-thumb">
+                    <img
+                      src="assets/images/slider/roblox.png"
+                      alt="cart-thumbnail"
+                    />
+                  </figure>
+
+                  <div class="cartcard-details">
+                    <div class="info">
+                      <a
+                        href="#"
+                        class="title d-inline-block text-truncate max-w-100"
+                        >Roblox Gift Card</a
+                      >
+                      <p class="price">$10</p>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn-remove"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Remove from wishlist"
+                    >
+                      <i class="ri-delete-bin-2-fill"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -912,5 +983,6 @@
     <script src="assets/js/jQuery/jquery.min.js"></script>
     <script src="assets/js/slick/slick.min.js"></script>
     <script src="assets/js/home-slider/homeslider.js"></script>
+    <script src="assets/js/tooltip/tooltip.js"></script>
   </body>
 </html>
