@@ -31,6 +31,17 @@ figure {
   margin: 0;
 }
 
+.loadericon {
+  width: 20rem;
+  height: 20rem;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
 .topbar {
   height: 2.5rem;
 }
@@ -46,7 +57,7 @@ figure {
 }
 
 .logo {
-  width: 10rem;
+  width: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,17 +153,49 @@ figure {
   color: var(--secondary);
 }
 
-@keyframes slideDownIn {
-  0% {
-    transform: translateY(-100%);
-  }
+.iconlist {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-  100% {
-    transform: translateY(0);
-  }
+.iconlist-link {
+  position: relative;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 350ms ease;
+}
 
-  0% {
-    transform: translateY(-100%);
+.iconlist-link i {
+  font-size: 1.5rem;
+}
+
+.iconlist-link:hover {
+  color: var(--primary);
+}
+
+.iconlist-link .counter {
+  background: var(--secondary);
+  color: var(--white);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.625rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.625rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+@media screen and (min-width: 48rem) {
+  .logo {
+    width: 10rem;
   }
 }
 
