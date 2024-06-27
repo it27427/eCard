@@ -7,7 +7,7 @@
   background: #333;
   cursor: pointer;
   position: fixed;
-  z-index: 2000;
+  z-index: 100;
   transition: all 0.4s ease-in-out;
   padding: 0.875rem;
   box-sizing: border-box;
