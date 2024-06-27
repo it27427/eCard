@@ -193,6 +193,63 @@ figure {
   z-index: 10;
 }
 
+button:hover,
+button:focus,
+.btn:hover,
+.btn:focus,
+input:focus,
+select:focus {
+  box-shadow: none;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  transform: rotate(90deg);
+  color: var(--primary);
+}
+
+.btn-close:focus,
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion,
+.accordion-item {
+  border: 0;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.accordion-button {
+  padding: 0;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.offcanvas .dropdown-item {
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 350ms ease;
+}
+
+.offcanvas .dropdown-item:hover {
+  color: var(--primary);
+}
+
 @media screen and (min-width: 48rem) {
   .logo {
     width: 10rem;
