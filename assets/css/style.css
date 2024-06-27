@@ -7,6 +7,8 @@
   --tertiary: #f48f1f;
   --white: #ffffff;
   --black: #000000;
+  --hoverbg: #f6f6f6;
+  --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -21,6 +23,8 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 figure {
@@ -77,4 +81,91 @@ figure {
 
 .h6 {
   color: var(--linkcolor);
+}
+
+.desktoplist {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.desktoplist-item {
+  position: relative;
+}
+
+.desktoplist-link {
+  color: var(--secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 350ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+.desktoplist-item:hover .desktoplist-link {
+  color: var(--primary);
+}
+
+.desktoplist-item:hover .dropdownlist {
+  display: block;
+}
+
+.dropdownlist {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  width: 17.5rem;
+  display: none;
+  animation-name: slideUpIn;
+  animation-fill-mode: both;
+  animation-duration: 350ms;
+}
+
+.dropdownlist-link {
+  display: inline-block;
+  padding: 0.625rem 1.25rem 0.625rem 1.875rem;
+  font-size: 0.875rem;
+  width: 100%;
+  color: var(--linkcolor);
+  transition: all 350ms ease;
+}
+
+.dropdownlist-item:hover .dropdownlist-link {
+  background: var(--hoverbg);
+  color: var(--secondary);
+}
+
+@keyframes slideDownIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+  0% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideUpIn {
+  0% {
+    transform: translateY(1.25rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+  0% {
+    transform: translateY(1.25rem);
+  }
 }
