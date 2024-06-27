@@ -598,7 +598,13 @@
           <!-- ICON-LIST -->
           <ul class="iconlist">
             <li class="iconlist-item">
-              <button type="button" class="iconlist-link">
+              <button
+                type="button"
+                class="iconlist-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#wishlistDrawer"
+                aria-controls="wishlistDrawer"
+              >
                 <i class="ri-heart-3-line"></i>
 
                 <span class="counter">10</span>
@@ -606,7 +612,13 @@
             </li>
 
             <li class="iconlist-item">
-              <button type="button" class="iconlist-link">
+              <button
+                type="button"
+                class="iconlist-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartDrawer"
+                aria-controls="cartDrawer"
+              >
                 <i class="ri-shopping-cart-line"></i>
 
                 <span class="counter">10</span>
@@ -614,11 +626,80 @@
             </li>
 
             <li class="iconlist-item">
-              <button type="button" class="iconlist-link">
+              <button
+                type="button"
+                class="iconlist-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#searchDrawer"
+                aria-controls="searchDrawer"
+              >
                 <i class="ri-search-line"></i>
               </button>
             </li>
           </ul>
+
+          <!-- CART-OFFCANVAS -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="cartDrawer"
+            aria-labelledby="cartDrawer"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Cart</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body"></div>
+          </div>
+
+          <!-- WISHLIST-OFFCANVAS -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="wishlistDrawer"
+            aria-labelledby="wishlistDrawer"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Wishlist</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body"></div>
+          </div>
+
+          <!-- SEARCH-OFFCANVAS -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="searchDrawer"
+            aria-labelledby="searchDrawer"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">What are you looking for?</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body"></div>
+          </div>
         </nav>
       </div>
     </header>

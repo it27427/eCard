@@ -250,6 +250,13 @@ select:focus {
   color: var(--primary);
 }
 
+.offcanvas-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
 @media screen and (min-width: 48rem) {
   .logo {
     width: 10rem;
