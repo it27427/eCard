@@ -738,6 +738,33 @@ select:focus {
   overflow: hidden;
 }
 
+.btn-viewall {
+  display: inline-block;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 0.3125rem;
+  background: var(--secondary);
+  font-size: 0.875rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: var(--transition);
+}
+
+.btn-viewall i {
+  transition: var(--transition);
+}
+
+.btn-viewall:hover {
+  background: var(--btnhover);
+}
+
+.btn-viewall:hover i {
+  margin-left: 0.5rem;
+}
+
 @media screen and (min-width: 48rem) {
   .logo {
     width: 10rem;
