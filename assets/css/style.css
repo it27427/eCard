@@ -509,6 +509,10 @@ select:focus {
   background: #151515 url(../images/wmp.svg) center no-repeat;
 }
 
+.footer .info p {
+  font-size: 0.875rem;
+}
+
 .copyright {
   height: 2.5rem;
   display: flex;
