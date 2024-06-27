@@ -530,7 +530,7 @@ select:focus {
   transition: all 350ms ease-in;
 }
 
-.footer nav a:hover {
+.footer nav .link-light:hover {
   color: var(--primary) !important;
 }
 
