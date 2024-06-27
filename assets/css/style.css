@@ -1,13 +1,17 @@
 :root {
   --linkcolor: #444444;
   --linkhover: #4ab2f1;
-  --primary: #dc4828;
-  --secondary: #2b4f90;
+  --primary: rgb(220, 73, 40);
+  --secondary: #2b4f91;
   --btnhover: #0d7cbf;
   --tertiary: #f48f1f;
   --white: #ffffff;
   --black: #000000;
   --hoverbg: #f6f6f6;
+  --facebook: #1877f2;
+  --twitter: #1da1f2;
+  --instagram: #fcaf45;
+  --linkedin: #0077b5;
   --inputborder: #dddddd;
   --placeholder: #9290c3;
   --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
@@ -84,6 +88,24 @@ input[type='number'] {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.btn-hamburger {
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  text-align: center;
+  background: var(--secondary);
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.btn-hamburger:hover {
+  background: var(--btnhover);
 }
 
 .header {
@@ -465,6 +487,82 @@ select:focus {
   color: var(--secondary);
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+.footer {
+  background: #151515 url(../images/wmp.svg) center no-repeat;
+}
+
+.copyright {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.copyright aside p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer nav a {
+  font-size: 0.8125rem;
+  transition: all 350ms ease-in;
+}
+
+.social-link {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-link i {
+  font-size: 1.125rem;
+}
+
+.social-link.facebook {
+  background: var(--facebook);
+  color: var(--white);
+}
+
+.social-link.twitter {
+  background: var(--twitter);
+  color: var(--white);
+}
+
+.social-link.instagram {
+  background: var(--instagram);
+  color: var(--white);
+}
+
+.social-link.linkedin {
+  background: var(--linkedin);
+  color: var(--white);
+}
+
+.footlink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footlink span {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.footlink .icon {
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 48rem) {
