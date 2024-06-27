@@ -34,6 +34,19 @@ ol {
   padding: 0;
 }
 
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
 figure {
   margin: 0;
 }
@@ -567,6 +580,65 @@ select:focus {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.sectiontitle {
+  color: var(--secondary);
+  font-weight: 700;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.info p a {
+  color: var(--black);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.info p a:hover {
+  color: var(--primary);
+}
+
+.ctgcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.ctgthumb {
+  width: 18.125rem;
+  height: 13.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ctgthumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.ctgthumb:hover img {
+  transform: scale(0.95);
+}
+
+.ctg-title {
+  color: var(--black);
+  transition: var(--transition);
+}
+
+.ctg-title:hover {
+  color: var(--primary);
 }
 
 @media screen and (min-width: 48rem) {
