@@ -309,6 +309,20 @@ select:focus {
   width: 5rem;
 }
 
+.emptyicon {
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.emptytitle {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 @media screen and (min-width: 48rem) {
   .logo {
     width: 10rem;
