@@ -101,7 +101,8 @@ input[type='number'] {
 }
 
 .logo {
-  width: 7rem;
+  width: 15rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,11 +843,8 @@ select:focus {
   overflow: hidden;
 }
 
-@media screen and (min-width: 48rem) {
-  .logo {
-    width: 10rem;
-  }
-}
+/* @media screen and (min-width: 48rem) {
+} */
 
 @keyframes slideUpIn {
   0% {
