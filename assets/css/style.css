@@ -13,6 +13,7 @@
   --instagram: #fcaf45;
   --linkedin: #0077b5;
   --inputborder: #dddddd;
+  --lightgray: #e0e0e0;
   --placeholder: #9290c3;
   --textolive: #7d8233;
   --textgray: #999999;
@@ -133,6 +134,13 @@ input[type='number'] {
   align-items: center;
 }
 
+.mainmenu {
+  background: var(--btnhover);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
 .btn-buy {
   display: inline-block;
   border-radius: 0.25rem;
@@ -160,7 +168,8 @@ input[type='number'] {
 .desktoplist {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -169,19 +178,19 @@ input[type='number'] {
 }
 
 .desktoplist-link {
-  color: var(--secondary);
-  font-size: 0.75rem;
+  color: var(--lightgray);
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 350ms ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 5rem;
+  height: 4rem;
 }
 
 .desktoplist-item:hover .desktoplist-link {
-  color: var(--primary);
+  color: var(--white);
 }
 
 .desktoplist-item:hover .dropdownlist {
@@ -213,7 +222,7 @@ input[type='number'] {
 
 .dropdownlist-item:hover .dropdownlist-link {
   background: var(--hoverbg);
-  color: var(--secondary);
+  color: var(--btnhover);
 }
 
 .iconlist {
