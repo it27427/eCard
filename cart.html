@@ -886,9 +886,132 @@
     </div>
     <!-- MAIN-MENU-END -->
 
-    <!-- HERO-SECTION -->
+    <!-- MAIN-SECTION -->
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- EMPTY-CART -->
+            <div
+              class="w-100 vh-100 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex flex-column gap-2 align-items-center justify-content-center text-center"
+              >
+                <figure class="emptyicon">
+                  <img
+                    src="assets/images/emptyscreen/empty-cart.svg"
+                    alt="EMPTY-CART-ICON"
+                    class="img-fluid"
+                  />
+                </figure>
+                <h5 class="emptytitle">Your Cart Is Empty!</h5>
+              </div>
+            </div>
+          </div>
 
-    <!-- HERO-SECTION -->
+          <div class="col-lg-4 col-md-5 col-sm-8 mx-sm-auto col-12">
+            <!-- CART-LIST -->
+            <div class="d-flex flex-column gap-5 py-5">
+              <div class="d-flex flex-column gap-4">
+                <div class="cartcard">
+                  <figure class="cartcard-thumb">
+                    <img
+                      src="assets/images/slider/itunes.png"
+                      alt="cart-thumbnail"
+                    />
+                  </figure>
+
+                  <div class="cartcard-details">
+                    <div class="info">
+                      <a href="#" class="title">iTunes Gift Card</a>
+                      <p class="price">$20</p>
+
+                      <div class="counterbox">
+                        <button type="button" class="btn-decrement">
+                          <i class="ri-subtract-fill"></i>
+                        </button>
+                        <input
+                          type="number"
+                          placeholder="1"
+                          class="counterinput"
+                        />
+                        <button type="button" class="btn-increment">
+                          <i class="ri-add-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn-remove"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Remove from cart"
+                    >
+                      <i class="ri-delete-bin-2-fill"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cartcard">
+                  <figure class="cartcard-thumb">
+                    <img
+                      src="assets/images/slider/roblox.png"
+                      alt="cart-thumbnail"
+                    />
+                  </figure>
+
+                  <div class="cartcard-details">
+                    <div class="info">
+                      <a
+                        href="#"
+                        class="title d-inline-block text-truncate max-w-100"
+                        >Roblox Gift Card</a
+                      >
+                      <p class="price">$10</p>
+
+                      <div class="counterbox">
+                        <button type="button" class="btn-decrement">
+                          <i class="ri-subtract-fill"></i>
+                        </button>
+                        <input
+                          type="number"
+                          placeholder="1"
+                          class="counterinput"
+                        />
+                        <button type="button" class="btn-increment">
+                          <i class="ri-add-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn-remove"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Remove from cart"
+                    >
+                      <i class="ri-delete-bin-2-fill"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="pricetitle">Total Price</h5>
+                  <h5 class="pricenumber">$30</h5>
+                </div>
+                <button type="button" class="btn-order">Place Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- MAIN-SECTION -->
 
     <!-- FOOTER-START -->
     <footer class="footer">
