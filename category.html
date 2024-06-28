@@ -269,6 +269,31 @@
     <header class="header sticky-top bg-white border-bottom">
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between">
+          <!-- BRAND-LOGO -->
+          <a href="index.html">
+            <figure class="logo">
+              <img
+                src="assets/images/logo.png"
+                alt="BRAND-LOGO"
+                class="object-fit-contain img-fluid"
+              />
+            </figure>
+          </a>
+
+          <!-- DESKTOP-SEARCH -->
+          <div class="d-none d-lg-block">
+            <div class="searchbox">
+              <form class="searchform" role="search">
+                <input
+                  class="searchfield"
+                  type="search"
+                  placeholder="Search eGift Cards, Game Codes & more..."
+                />
+                <button class="btn-search" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
           <!-- MOBILE-MENU -->
           <div class="d-lg-none d-block">
             <button
@@ -278,7 +303,7 @@
               data-bs-target="#mobileMenu"
               aria-controls="mobileMenu"
             >
-              <i class="ri-menu-2-fill"></i>
+              <i class="ri-menu-3-line"></i>
             </button>
 
             <div
@@ -471,60 +496,6 @@
               </div>
             </div>
           </div>
-
-          <!-- BRAND-LOGO -->
-          <a href="index.html">
-            <figure class="logo">
-              <img
-                src="assets/images/logo.png"
-                alt="BRAND-LOGO"
-                class="object-fit-contain img-fluid"
-              />
-            </figure>
-          </a>
-
-          <!-- ICON-LIST -->
-          <ul class="iconlist">
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#wishlistDrawer"
-                aria-controls="wishlistDrawer"
-              >
-                <i class="ri-heart-3-line"></i>
-
-                <span class="counter">0</span>
-              </button>
-            </li>
-
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#cartDrawer"
-                aria-controls="cartDrawer"
-              >
-                <i class="ri-shopping-cart-line"></i>
-
-                <span class="counter">0</span>
-              </button>
-            </li>
-
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#searchDrawer"
-                aria-controls="searchDrawer"
-              >
-                <i class="ri-search-line"></i>
-              </button>
-            </li>
-          </ul>
 
           <!-- CART-OFFCANVAS -->
           <div
@@ -753,40 +724,29 @@
               </div>
             </div>
           </div>
-
-          <!-- SEARCH-OFFCANVAS -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="searchDrawer"
-            aria-labelledby="searchDrawer"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">What are you looking for?</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body">
-              <form class="searchform" role="search">
-                <input
-                  class="searchfield"
-                  type="search"
-                  placeholder="Search eGift Cards, Game Codes & more..."
-                />
-                <button class="btn-search" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
         </nav>
       </div>
     </header>
     <!-- HEADER-SECTION -->
+
+    <!-- MOBILE-SEARCH -->
+    <div class="d-lg-none d-block py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="searchform" role="search">
+              <input
+                class="searchfield"
+                type="search"
+                placeholder="Search eGift Cards, Game Codes & more..."
+              />
+              <button class="btn-search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE-SEARCH -->
 
     <!-- MAIN-MENU-START -->
     <div class="d-none d-lg-block">
