@@ -95,6 +95,10 @@ input[type='number'] {
   color: var(--linkcolor);
 }
 
+.topbarlink i {
+  font-size: 1.125rem;
+}
+
 .topbarlink:hover,
 .topbarlink:focus,
 .topbarlink:active {
