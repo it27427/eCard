@@ -545,6 +545,15 @@ select:focus {
   color: var(--linkhover);
 }
 
+.footer-intro-menu {
+  margin: 0.25rem 0 1.5rem;
+  font-weight: bold;
+}
+
+.footer-intro-menu span {
+  color: var(--textgray);
+}
+
 .footlink {
   display: flex;
   align-items: center;
