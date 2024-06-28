@@ -536,12 +536,13 @@ select:focus {
 }
 
 .footer nav a {
-  font-size: 0.8125rem;
-  transition: all 350ms ease-in;
+  color: var(--textgray);
+  font-size: 0.875rem;
+  transition: var(--transition);
 }
 
-.footer nav .link-light:hover {
-  color: var(--primary) !important;
+.footer nav a:hover {
+  color: var(--linkhover);
 }
 
 .footlink {
