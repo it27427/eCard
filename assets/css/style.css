@@ -14,7 +14,7 @@
   --linkedin: #0077b5;
   --inputborder: #dddddd;
   --placeholder: #9290c3;
-  --gextolive: #7d8233;
+  --textolive: #7d8233;
   --textgray: #999999;
   --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
   --boxshadow: 0.3125rem 0 1.5625rem rgba(0, 0, 0, 0.2);
@@ -527,6 +527,12 @@ select:focus {
   color: var(--textgray);
   font-size: 0.8125rem;
   font-weight: 500;
+}
+
+.footertitle {
+  color: var(--textolive);
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .footer nav a {
