@@ -528,9 +528,6 @@ select:focus {
   font-weight: 500;
 }
 
-.payment-thumb {
-}
-
 .footer nav a {
   font-size: 0.8125rem;
   transition: all 350ms ease-in;
