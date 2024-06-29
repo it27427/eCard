@@ -968,6 +968,18 @@ select:focus {
   background: var(--white);
 }
 
+.view-all {
+  background: var(--linkcolor);
+  color: var(--white);
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.325rem 1rem;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
