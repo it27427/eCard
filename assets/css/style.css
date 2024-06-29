@@ -825,7 +825,6 @@ select:focus {
 }
 
 .mainside {
-  width: 16.25rem;
   background: var(--white);
   box-shadow: var(--shadow);
 }
