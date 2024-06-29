@@ -999,12 +999,14 @@ select:focus {
 
 .breadcrumb-item {
   color: var(--linkcolor);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
 .breadcrumb-item a {
   color: var(--linkcolor);
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .breadcrumb-item a:hover {

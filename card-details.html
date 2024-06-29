@@ -269,6 +269,31 @@
     <header class="header sticky-top bg-white border-bottom">
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between">
+          <!-- BRAND-LOGO -->
+          <a href="index.html">
+            <figure class="logo">
+              <img
+                src="assets/images/logo.png"
+                alt="BRAND-LOGO"
+                class="object-fit-contain img-fluid"
+              />
+            </figure>
+          </a>
+
+          <!-- DESKTOP-SEARCH -->
+          <div class="d-none d-lg-block">
+            <div class="searchbox">
+              <form class="searchform" role="search">
+                <input
+                  class="searchfield"
+                  type="search"
+                  placeholder="Search eGift Cards, Game Codes & more..."
+                />
+                <button class="btn-search" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
           <!-- MOBILE-MENU -->
           <div class="d-lg-none d-block">
             <button
@@ -278,7 +303,7 @@
               data-bs-target="#mobileMenu"
               aria-controls="mobileMenu"
             >
-              <i class="ri-menu-2-fill"></i>
+              <i class="ri-menu-3-line"></i>
             </button>
 
             <div
@@ -471,439 +496,188 @@
               </div>
             </div>
           </div>
-
-          <!-- BRAND-LOGO -->
-          <a href="index.html">
-            <figure class="logo">
-              <img
-                src="assets/images/logo.png"
-                alt="BRAND-LOGO"
-                class="object-fit-contain img-fluid"
-              />
-            </figure>
-          </a>
-
-          <!-- DESKTOP-LIST -->
-          <div class="d-none d-lg-block">
-            <ul class="desktoplist">
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Home</a>
-              </li>
-
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Gift Cards</a>
-
-                <ul class="dropdownlist">
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Apple iTunes Gift
-                      Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Roblox Game Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Google Play Gift
-                      Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Xbox Gift Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Nintendo eShop Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Spotify Gift Card
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> PlayStation Gift
-                      Card
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Subscription</a>
-
-                <ul class="dropdownlist">
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> EA Access
-                      Subscription
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> X-Box Membership
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Nintendo Membership
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> PlayStation Plus
-                      Membership
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Visa/Master Cards</a>
-
-                <ul class="dropdownlist">
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Virtual Visa Cards
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Vanilla Master Cards
-                    </a>
-                  </li>
-                  <li class="dropdownlist-item">
-                    <a href="#" class="dropdownlist-link">
-                      <i class="ri-arrow-right-s-fill"></i> Vanilla Visa Cards
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Streming Services</a>
-              </li>
-
-              <li class="desktoplist-item">
-                <a href="#" class="desktoplist-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ICON-LIST -->
-          <ul class="iconlist">
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#wishlistDrawer"
-                aria-controls="wishlistDrawer"
-              >
-                <i class="ri-heart-3-line"></i>
-
-                <span class="counter">0</span>
-              </button>
-            </li>
-
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#cartDrawer"
-                aria-controls="cartDrawer"
-              >
-                <i class="ri-shopping-cart-line"></i>
-
-                <span class="counter">0</span>
-              </button>
-            </li>
-
-            <li class="iconlist-item">
-              <button
-                type="button"
-                class="iconlist-link"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#searchDrawer"
-                aria-controls="searchDrawer"
-              >
-                <i class="ri-search-line"></i>
-              </button>
-            </li>
-          </ul>
-
-          <!-- CART-OFFCANVAS -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="cartDrawer"
-            aria-labelledby="cartDrawer"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">Cart</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body">
-              <!-- EMPTY-CART -->
-              <div
-                class="d-flex flex-column gap-2 align-items-center justify-content-center text-center h-100"
-              >
-                <figure class="emptyicon">
-                  <img
-                    src="assets/images/emptyscreen/empty-cart.svg"
-                    alt="EMPTY-CART-ICON"
-                    class="img-fluid"
-                  />
-                </figure>
-                <h5 class="emptytitle">Your Cart Is Empty!</h5>
-              </div>
-
-              <!-- CART-LIST -->
-              <div class="d-flex flex-column gap-5">
-                <div class="d-flex flex-column gap-4">
-                  <div class="cartcard">
-                    <figure class="cartcard-thumb">
-                      <img
-                        src="assets/images/slider/itunes.png"
-                        alt="cart-thumbnail"
-                      />
-                    </figure>
-
-                    <div class="cartcard-details">
-                      <div class="info">
-                        <a href="#" class="title">iTunes Gift Card</a>
-                        <p class="price">$20</p>
-
-                        <div class="counterbox">
-                          <button type="button" class="btn-decrement">
-                            <i class="ri-subtract-fill"></i>
-                          </button>
-                          <input
-                            type="number"
-                            placeholder="1"
-                            class="counterinput"
-                          />
-                          <button type="button" class="btn-increment">
-                            <i class="ri-add-fill"></i>
-                          </button>
-                        </div>
-                      </div>
-
-                      <button
-                        type="button"
-                        class="btn-remove"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        data-bs-title="Remove from cart"
-                      >
-                        <i class="ri-delete-bin-2-fill"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="cartcard">
-                    <figure class="cartcard-thumb">
-                      <img
-                        src="assets/images/slider/roblox.png"
-                        alt="cart-thumbnail"
-                      />
-                    </figure>
-
-                    <div class="cartcard-details">
-                      <div class="info">
-                        <a
-                          href="#"
-                          class="title d-inline-block text-truncate max-w-100"
-                          >Roblox Gift Card</a
-                        >
-                        <p class="price">$10</p>
-
-                        <div class="counterbox">
-                          <button type="button" class="btn-decrement">
-                            <i class="ri-subtract-fill"></i>
-                          </button>
-                          <input
-                            type="number"
-                            placeholder="1"
-                            class="counterinput"
-                          />
-                          <button type="button" class="btn-increment">
-                            <i class="ri-add-fill"></i>
-                          </button>
-                        </div>
-                      </div>
-
-                      <button
-                        type="button"
-                        class="btn-remove"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        data-bs-title="Remove from cart"
-                      >
-                        <i class="ri-delete-bin-2-fill"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex flex-column gap-3">
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <h5 class="pricetitle">Total Price</h5>
-                    <h5 class="pricenumber">$30</h5>
-                  </div>
-                  <button type="button" class="btn-order">Place Order</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- WISHLIST-OFFCANVAS -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="wishlistDrawer"
-            aria-labelledby="wishlistDrawer"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">Wishlist</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body">
-              <!-- EMPTY-WISHLIST -->
-              <div
-                class="d-flex flex-column gap-1 align-items-center justify-content-center text-center h-100"
-              >
-                <figure class="emptyicon">
-                  <img
-                    src="assets/images/emptyscreen/empty-wishlist.svg"
-                    alt="EMPTY-WISHLIST-ICON"
-                    class="img-fluid"
-                  />
-                </figure>
-                <h5 class="emptytitle">Your Wishlist Is Empty!</h5>
-              </div>
-
-              <!-- WISHLIST -->
-              <div class="d-flex flex-column gap-4">
-                <div class="cartcard">
-                  <figure class="cartcard-thumb">
-                    <img
-                      src="assets/images/slider/itunes.png"
-                      alt="cart-thumbnail"
-                    />
-                  </figure>
-
-                  <div class="cartcard-details">
-                    <div class="info">
-                      <a href="#" class="title">iTunes Gift Card</a>
-                      <p class="price">$20</p>
-                    </div>
-
-                    <button
-                      type="button"
-                      class="btn-remove"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Remove from wishlist"
-                    >
-                      <i class="ri-delete-bin-2-fill"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="cartcard">
-                  <figure class="cartcard-thumb">
-                    <img
-                      src="assets/images/slider/roblox.png"
-                      alt="cart-thumbnail"
-                    />
-                  </figure>
-
-                  <div class="cartcard-details">
-                    <div class="info">
-                      <a
-                        href="#"
-                        class="title d-inline-block text-truncate max-w-100"
-                        >Roblox Gift Card</a
-                      >
-                      <p class="price">$10</p>
-                    </div>
-
-                    <button
-                      type="button"
-                      class="btn-remove"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Remove from wishlist"
-                    >
-                      <i class="ri-delete-bin-2-fill"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SEARCH-OFFCANVAS -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="searchDrawer"
-            aria-labelledby="searchDrawer"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">What are you looking for?</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body">
-              <form class="searchform" role="search">
-                <input
-                  class="searchfield"
-                  type="search"
-                  placeholder="Search eGift Cards, Game Codes & more..."
-                />
-                <button class="btn-search" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
         </nav>
       </div>
     </header>
     <!-- HEADER-SECTION -->
 
-    <!-- HERO-SECTION -->
+    <!-- MOBILE-SEARCH -->
+    <div class="d-lg-none d-block py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="searchform" role="search">
+              <input
+                class="searchfield"
+                type="search"
+                placeholder="Search eGift Cards, Game Codes & more..."
+              />
+              <button class="btn-search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE-SEARCH -->
 
-    <!-- HERO-SECTION -->
+    <!-- MAIN-MENU-START -->
+    <div class="d-none d-lg-block">
+      <div class="mainmenu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="desktoplist">
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Home</a>
+                </li>
+
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Gift Cards</a>
+
+                  <ul class="dropdownlist">
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Apple iTunes Gift
+                        Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Roblox Game Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Google Play Gift
+                        Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Xbox Gift Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Nintendo eShop
+                        Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Spotify Gift Card
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> PlayStation Gift
+                        Card
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Subscription</a>
+
+                  <ul class="dropdownlist">
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> EA Access
+                        Subscription
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> X-Box Membership
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Nintendo
+                        Membership
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> PlayStation Plus
+                        Membership
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Visa/Master Cards</a>
+
+                  <ul class="dropdownlist">
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Virtual Visa Cards
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Vanilla Master
+                        Cards
+                      </a>
+                    </li>
+                    <li class="dropdownlist-item">
+                      <a href="#" class="dropdownlist-link">
+                        <i class="ri-arrow-right-s-fill"></i> Vanilla Visa Cards
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Streming Services</a>
+                </li>
+
+                <li class="desktoplist-item">
+                  <a href="#" class="desktoplist-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN-MENU-END -->
+
+    <!-- BREADCRUMB-START -->
+    <section class="breadsection bg-secondary-subtle">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+
+            <li class="breadcrumb-item">
+              <a href="#">Gift Cards</a>
+            </li>
+
+            <li class="breadcrumb-item">
+              <a href="#">Apple iTunes Gift Card</a>
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              iTunes Gift Card $15 (Digital Code)
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- BREADCRUMB-END -->
+
+    <!-- MAIN-SECTION -->
+    <main class="main py-5">
+      <div class="container">
+        <div class="row g-5"></div>
+      </div>
+    </main>
+    <!-- MAIN-SECTION -->
 
     <!-- FOOTER-START -->
     <footer class="footer">
