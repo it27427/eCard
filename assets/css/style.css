@@ -115,7 +115,8 @@ input[type='number'] {
   overflow: hidden;
 }
 
-.btn-hamburger {
+.btn-hamburger,
+.btn-sidebar {
   border: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -129,7 +130,8 @@ input[type='number'] {
   transition: var(--transition);
 }
 
-.btn-hamburger:hover {
+.btn-hamburger:hover,
+.btn-sidebar:hover {
   background: var(--secondary);
 }
 
@@ -1022,6 +1024,7 @@ select:focus {
 .rightcontent-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 0 1rem;
   border-bottom: solid 0.0625rem var(--inputborder);
 }
