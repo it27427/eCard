@@ -863,11 +863,11 @@ select:focus {
   transition: var(--transition);
 }
 
-.sidelist-link:hover:not(.active) {
+.sidelist-item:hover:not(.active) .sidelist-link {
   color: var(--btnhover);
 }
 
-.sidelist-link.active {
+.sidelist-item.active .sidelist-link {
   color: var(--btnhover);
 }
 
