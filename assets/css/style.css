@@ -823,6 +823,66 @@ select:focus {
   font-size: 0.875rem;
 }
 
+.mainside {
+  width: 16.25rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.sectionsidebar-header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.sidebartitle {
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sectionsidebar-body {
+  padding: 1rem;
+}
+
+.sidelist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidelist-link {
+  color: var(--linkcolor);
+  display: inline-block;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.sidelist-link:hover {
+  color: var(--btnhover);
+}
+
+.sidesublist {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidesublist-link {
+  color: var(--linkcolor);
+  display: inline-block;
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.sidesublist-link:hover {
+  color: var(--btnhover);
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
