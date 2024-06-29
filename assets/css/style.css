@@ -889,7 +889,7 @@ select:focus {
 .sidesublist-link {
   color: var(--linkcolor);
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   transition: var(--transition);
 }
 
