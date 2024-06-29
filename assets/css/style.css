@@ -1043,6 +1043,19 @@ select:focus {
   font-size: 1rem;
 }
 
+.rightcontent .choices {
+  width: 10rem;
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding: 0.5rem;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
