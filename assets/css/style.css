@@ -1035,6 +1035,10 @@ select:focus {
   font-size: 0.875rem;
 }
 
+.emptybox {
+  height: calc(100vh - 11.5rem);
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
