@@ -42,6 +42,7 @@ ol {
 }
 
 p {
+  font-size: 0.875rem;
   text-wrap: pretty;
 }
 
