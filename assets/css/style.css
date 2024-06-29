@@ -15,6 +15,7 @@
   --inputborder: #dddddd;
   --lightgray: #e0e0e0;
   --placeholder: #9290c3;
+  --graybg: #f6f6f6;
   --textolive: #7d8233;
   --textgray: #999999;
   --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
@@ -986,6 +987,31 @@ select:focus {
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.325rem 1rem;
+}
+
+.breadsection {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb-item {
+  color: var(--linkcolor);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.breadcrumb-item a {
+  color: var(--linkcolor);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--btnhover);
+}
+
+.breadcrumb-item.active {
+  color: var(--linkcolor);
 }
 
 .line-clamp {
