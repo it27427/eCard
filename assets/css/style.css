@@ -1101,6 +1101,11 @@ select:focus {
   font-size: 0.875rem;
 }
 
+.description ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
