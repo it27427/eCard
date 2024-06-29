@@ -1076,6 +1076,11 @@ select:focus {
   transform: scale(0.95);
 }
 
+.cardtitle {
+  color: var(--btnhover);
+  font-weight: 400;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
