@@ -1036,8 +1036,11 @@ select:focus {
   overflow: hidden;
 }
 
-/* @media screen and (min-width: 48rem) {
-} */
+@media screen and (max-width: 48rem) {
+  .rightcontent-body .taglist {
+    padding-inline: 1rem;
+  }
+}
 
 @keyframes slideUpIn {
   0% {
