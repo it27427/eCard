@@ -883,6 +883,42 @@ select:focus {
   color: var(--btnhover);
 }
 
+.cardview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardview-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 4rem;
+  height: 5rem;
+}
+
+.cardview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardview-details {
+  width: calc(100% - 4.5rem);
+}
+
+.cardview-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+  transition: var(--transition);
+}
+
+.cardview-title:hover {
+  color: var(--btnhover);
+}
+
 .taglist {
   display: flex;
   flex-wrap: wrap;
