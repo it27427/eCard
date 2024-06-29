@@ -861,7 +861,11 @@ select:focus {
   transition: var(--transition);
 }
 
-.sidelist-link:hover {
+.sidelist-link:hover:not(.active) {
+  color: var(--btnhover);
+}
+
+.sidelist-link.active {
   color: var(--btnhover);
 }
 
@@ -879,7 +883,11 @@ select:focus {
   transition: var(--transition);
 }
 
-.sidesublist-link:hover {
+.sidesublist-link:hover:not(.active) {
+  color: var(--btnhover);
+}
+
+.sidesublist-link.active {
   color: var(--btnhover);
 }
 
