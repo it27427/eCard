@@ -871,6 +871,14 @@ select:focus {
   color: var(--btnhover);
 }
 
+.sidelist-link:hover:not(.active) {
+  color: var(--btnhover);
+}
+
+.sidelist-link.active {
+  color: var(--btnhover);
+}
+
 .sidesublist {
   padding-left: 1rem;
   display: flex;
