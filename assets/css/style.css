@@ -1044,6 +1044,10 @@ select:focus {
   border-bottom: solid 0.0625rem var(--inputborder);
 }
 
+.rightcontent .info p {
+  font-size: 0.875rem;
+}
+
 .tagtitle {
   font-size: 0.875rem;
 }
