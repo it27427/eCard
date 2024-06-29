@@ -883,6 +883,55 @@ select:focus {
   color: var(--btnhover);
 }
 
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.taglist-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  line-height: 1.5;
+  position: relative;
+  padding: 0 0.625rem 0 0.75rem;
+  background: var(--btnhover);
+  -webkit-border-bottom-right-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+  -webkit-border-top-right-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+  color: var(--white);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.taglist-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.75rem;
+  width: 0;
+  height: 0;
+  border-color: transparent var(--btnhover) transparent transparent;
+  border-style: solid;
+  border-width: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.taglist-link::after {
+  content: '';
+  position: absolute;
+  top: 0.625rem;
+  left: 0.125rem;
+  float: left;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: var(--white);
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
