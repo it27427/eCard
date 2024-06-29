@@ -1013,6 +1013,19 @@ select:focus {
   color: var(--linkcolor);
 }
 
+.rightcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rightcontent-header {
+  display: flex;
+  align-items: center;
+  padding: 0 0 1rem;
+  border-bottom: solid 0.0625rem var(--inputborder);
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
