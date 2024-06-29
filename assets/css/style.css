@@ -879,11 +879,15 @@ select:focus {
   color: var(--btnhover);
 }
 
+.sidelist-item.active > .sidesublist {
+  display: flex;
+}
+
 .sidesublist {
   padding-left: 1rem;
-  display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  display: none;
 }
 
 .sidesublist-link {
