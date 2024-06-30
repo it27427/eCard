@@ -1151,6 +1151,56 @@ select:focus {
   color: var(--btnhover);
 }
 
+.pagination {
+  gap: 0.5rem;
+}
+
+.page-link {
+  margin: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--linkcolor);
+  color: var(--white);
+}
+
+.page-item:hover .page-link:not(:disabled) {
+  background: var(--btnhover);
+  color: var(--white);
+}
+
+.page-item:hover:not(.active) .page-link {
+  background: var(--btnhover);
+  color: var(--white);
+}
+
+.active > .page-link,
+.page-link.active {
+  background: var(--btnhover);
+  color: var(--white);
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-link i {
+  font-size: 1.5rem;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.page-item:not(:first-child) .page-link,
+.page-item:not(:last-child) .page-link {
+  border: 0;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
