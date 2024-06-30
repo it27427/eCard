@@ -1203,6 +1203,22 @@ select:focus {
   border: 0;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--btnhover);
+}
+
+textarea {
+  resize: none;
+}
+
+.contactform {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
