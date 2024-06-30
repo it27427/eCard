@@ -1219,6 +1219,16 @@ textarea {
   border-radius: 0.25rem;
 }
 
+.sociallink {
+  color: var(--tertiary);
+  font-size: 1.5rem;
+}
+
+.date {
+  background: var(--white);
+  font-style: italic;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
