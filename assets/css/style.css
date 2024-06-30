@@ -1062,6 +1062,7 @@ select:focus {
 
 .rightcontent .choices {
   width: 10rem;
+  margin-bottom: 0;
 }
 
 .choices__list--dropdown .choices__item--selectable,
