@@ -217,6 +217,7 @@ input[type='number'] {
   animation-name: slideUpIn;
   animation-fill-mode: both;
   animation-duration: 350ms;
+  z-index: 100;
 }
 
 .dropdownlist-link {
