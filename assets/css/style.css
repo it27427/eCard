@@ -1279,6 +1279,15 @@ textarea {
   font-style: italic;
 }
 
+.notfoundthumb {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
