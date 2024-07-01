@@ -1353,6 +1353,26 @@ textarea {
   font-size: 1rem;
 }
 
+.customerinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.customerinfo-header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.customerinfo-header .title {
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
