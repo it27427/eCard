@@ -1300,6 +1300,35 @@ textarea {
   text-decoration: none;
 }
 
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: var(--btnhover);
+  border-color: var(--btnhover);
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.form-check-label::selection {
+  background: transparent;
+  color: var(--linkcolor);
+}
+
+.forgotlink {
+  color: var(--linkcolor);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.forgotlink:hover {
+  color: var(--btnhover);
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
