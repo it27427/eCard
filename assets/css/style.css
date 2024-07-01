@@ -1288,6 +1288,18 @@ textarea {
   overflow: hidden;
 }
 
+.authlink {
+  color: var(--secondary);
+  font-weight: 500;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.authlink:hover {
+  color: var(--btnhover);
+  text-decoration: none;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
