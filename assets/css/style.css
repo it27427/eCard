@@ -91,10 +91,15 @@ input[type='number'] {
 
 .topbar {
   height: 2.5rem;
+  /* position: relative; */
 }
 
 .topbarlink {
   color: var(--linkcolor);
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .topbarlink i {
@@ -105,6 +110,51 @@ input[type='number'] {
 .topbarlink:focus,
 .topbarlink:active {
   color: var(--primary);
+}
+
+.topdropdown {
+  position: relative;
+  height: 2.5rem;
+  /* display: flex;
+  align-items: center; */
+}
+
+.topdropdown:hover .topdropdown-menu {
+  display: flex;
+}
+
+.topdropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  box-shadow: var(--boxshadow);
+  display: none;
+  animation-name: slideUpIn;
+  animation-fill-mode: both;
+  animation-duration: 350ms;
+  flex-direction: column;
+  width: 9rem;
+  z-index: 1100;
+}
+
+.dropdownlink {
+  color: var(--linkcolor);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.dropdownlink:first-child {
+  border-bottom: solid 0.0625rem var(--lightgray);
+}
+
+.dropdownlink:hover {
+  color: var(--btnhover);
+  background: var(--hoverbg);
 }
 
 .logo {

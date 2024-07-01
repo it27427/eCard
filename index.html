@@ -258,22 +258,38 @@
 
           <div class="d-flex align-items-center gap-3">
             <div class="d-flex align-items-center gap-3">
-              <i class="ri-user-3-line"></i>
-              <a href="#" class="topbarlink">My Account</a>
-              <a href="#" class="topbarlink">Log Out</a>
+              <div class="topdropdown">
+                <button
+                  type="button"
+                  class="topbarlink border-0 bg-transparent"
+                >
+                  <i class="ri-user-3-line"></i>
+                </button>
+
+                <div class="topdropdown-menu">
+                  <a href="login.html" class="dropdownlink">
+                    <i class="ri-logout-circle-r-line"></i> Log Out
+                  </a>
+                  <a href="myaccount.html" class="dropdownlink">
+                    <i class="ri-user-line"></i> My Account
+                  </a>
+                </div>
+              </div>
+
               <a href="wishlist.html" class="topbarlink">
                 <i class="ri-heart-2-line"></i>
-                <span class="d-none d-lg-inline-block">Wishlist</span> (0)
+                <span class="d-none d-md-inline-block">Wishlist</span> (0)
               </a>
+
               <a href="cart.html" class="topbarlink">
                 <i class="ri-shopping-bag-4-line"></i>
-                <span class="d-none d-lg-inline-block">Cart</span> (0)
+                <span class="d-none d-md-inline-block">Cart</span> (0)
               </a>
             </div>
 
             <div class="d-flex align-items-center gap-3 d-none">
-              <a href="#" class="topbarlink">Login</a>
-              <a href="#" class="topbarlink">Register</a>
+              <a href="login.html" class="topbarlink">Login</a>
+              <a href="register.html" class="topbarlink">Register</a>
             </div>
           </div>
         </div>
