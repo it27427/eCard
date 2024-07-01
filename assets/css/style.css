@@ -1339,6 +1339,20 @@ textarea {
   text-align: center;
 }
 
+.btn-action {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.btn-action i {
+  font-size: 1rem;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
