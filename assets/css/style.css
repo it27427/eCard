@@ -89,11 +89,6 @@ input[type='number'] {
   z-index: 9999;
 }
 
-.topbar {
-  height: 2.5rem;
-  /* position: relative; */
-}
-
 .topbarlink {
   color: var(--linkcolor);
   height: 2.5rem;
@@ -648,8 +643,6 @@ select:focus {
 }
 
 .ctgthumb {
-  width: 18.125rem;
-  height: 13.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1383,6 +1376,17 @@ textarea {
 @media screen and (max-width: 48rem) {
   .rightcontent-body .taglist {
     padding-inline: 1rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .topbar {
+    height: 2.5rem;
+  }
+
+  .ctgthumb {
+    width: 18.125rem;
+    height: 13.125rem;
   }
 }
 
