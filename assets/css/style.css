@@ -221,7 +221,6 @@ input[type='number'] {
 .desktoplist {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1.5rem;
   list-style: none;
 }
@@ -254,7 +253,7 @@ input[type='number'] {
   list-style: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   background: var(--white);
   box-shadow: var(--shadow);
   width: 16rem;
