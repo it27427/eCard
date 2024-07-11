@@ -221,16 +221,19 @@ input[type='number'] {
 .desktoplist {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   list-style: none;
 }
 
 .desktoplist-item {
   position: relative;
+  height: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .desktoplist-link {
-  color: var(--lightgray);
+  color: var(--white);
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -238,11 +241,20 @@ input[type='number'] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
+  padding-inline: 1rem;
+  border-right: solid .0938rem var(--inputborder);
 }
 
-.desktoplist-item:hover .desktoplist-link {
-  color: var(--white);
+.desktoplist-item:last-of-type .desktoplist-link {
+  border-right: 0;
+}
+
+.desktoplist-item:hover .desktoplist-link:not(.active) {
+  color: var(--linkhover);
+}
+
+.desktoplist-item .desktoplist-link.active {
+  color: var(--linkhover);
 }
 
 .desktoplist-item:hover .dropdownlist {
@@ -275,7 +287,7 @@ input[type='number'] {
 
 .dropdownlist-item:hover .dropdownlist-link {
   background: var(--hoverbg);
-  color: var(--btnhover);
+  color: var(--linkhover);
 }
 
 button:hover,
@@ -312,7 +324,7 @@ select:focus {
   padding: 0;
 }
 
-.accordion-item:first-of-type > .accordion-header .accordion-button {
+.accordion-item:first-of-type>.accordion-header .accordion-button {
   border-radius: 0;
 }
 
@@ -320,7 +332,7 @@ select:focus {
   background-color: transparent;
 }
 
-.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
   border-radius: 0;
 }
 
@@ -925,7 +937,7 @@ select:focus {
   color: var(--btnhover);
 }
 
-.sidelist-item.active > .sidesublist {
+.sidelist-item.active>.sidesublist {
   display: flex;
 }
 
@@ -1223,7 +1235,7 @@ select:focus {
   color: var(--white);
 }
 
-.active > .page-link,
+.active>.page-link,
 .page-link.active {
   background: var(--btnhover);
   color: var(--white);
