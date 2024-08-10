@@ -222,14 +222,17 @@ input[type='number'] {
   display: flex;
   align-items: center;
   list-style: none;
+  height: 4rem;
 }
 
 .desktoplist-item {
   position: relative;
-  height: 4rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  padding-inline: 1rem;
+  border-right: solid 0.0938rem var(--inputborder);
 }
 
 .desktoplist-link {
@@ -241,11 +244,9 @@ input[type='number'] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 1rem;
-  border-right: solid .0938rem var(--inputborder);
 }
 
-.desktoplist-item:last-of-type .desktoplist-link {
+.desktoplist-item:last-of-type {
   border-right: 0;
 }
 
@@ -257,23 +258,27 @@ input[type='number'] {
   color: var(--linkhover);
 }
 
-.desktoplist-item:hover .dropdownlist {
+.desktoplist-item:hover .dropdownmenu {
   display: block;
+}
+
+.dropdownmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  padding-block-start: 1.25rem;
 }
 
 .dropdownlist {
   list-style: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
   background: var(--white);
   box-shadow: var(--shadow);
   width: 16rem;
-  display: none;
   animation-name: slideUpIn;
   animation-fill-mode: both;
   animation-duration: 350ms;
-  z-index: 100;
 }
 
 .dropdownlist-link {
@@ -324,7 +329,7 @@ select:focus {
   padding: 0;
 }
 
-.accordion-item:first-of-type>.accordion-header .accordion-button {
+.accordion-item:first-of-type > .accordion-header .accordion-button {
   border-radius: 0;
 }
 
@@ -332,7 +337,7 @@ select:focus {
   background-color: transparent;
 }
 
-.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
   border-radius: 0;
 }
 
@@ -937,7 +942,7 @@ select:focus {
   color: var(--btnhover);
 }
 
-.sidelist-item.active>.sidesublist {
+.sidelist-item.active > .sidesublist {
   display: flex;
 }
 
@@ -1235,7 +1240,7 @@ select:focus {
   color: var(--white);
 }
 
-.active>.page-link,
+.active > .page-link,
 .page-link.active {
   background: var(--btnhover);
   color: var(--white);
